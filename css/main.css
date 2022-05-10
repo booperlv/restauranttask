@@ -1,0 +1,92 @@
+#Main {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#MainContent {
+  flex: 1;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("../images/index.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#MainCentered {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0.125rem solid var(--hover-green);
+  box-shadow: 3px 3px var(--muted-green);
+}
+#MainCentered * {
+  margin: 0;
+  gap: 0;
+}
+#MainCentered h1 {
+  padding: 0.5rem;
+  text-shadow: 3px 3px var(--dark-blue);
+  color: white;
+  border-bottom: 2px solid var(--dark-blue);
+  background: var(--bg-blue);
+}
+
+#MainCentered #MainDescription {
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  background: var(--bg-green);
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px var(--muted-green);
+  border-bottom: 2px solid var(--darkest-blue);
+}
+
+#MainButtonRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: center;
+}
+#MainCustomOrder {
+  min-height: 100%;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  background: var(--yellow);
+  border-bottom: 2px solid var(--darkest-yellow);
+  border-right: 2px solid var(--darkest-yellow);
+  color: var(--dark-blue);
+  text-shadow: 1px 1px var(--darkest-blue);
+  flex: 1;
+}
+#MainCustomOrder:hover, #MainCustomOrder:focus {
+  background: var(--darkest-yellow);
+  color: white;
+}
+#MainMenu {
+  min-height: 100%;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  background: var(--bg-blue);
+  border-bottom: 2px solid var(--dark-blue);
+  border-right: 2px solid var(--dark-blue);
+  color: var(--yellow);
+  text-shadow: 1px 1px var(--bg-green);
+  flex: 1;
+}
+#MainMenu:hover, #MainCustomOrder:focus {
+  background: var(--dark-blue);
+}

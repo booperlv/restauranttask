@@ -1,0 +1,155 @@
+#Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#MainPopup {
+  height: fit-content;
+  width: 70%;
+
+  position: fixed;
+  z-index: 1500;
+  margin: auto;
+  left: 0; top: 0; right: 0; bottom: 0;
+
+  padding: 1rem;
+  border: 0.125rem solid var(--muted-green);
+  background: var(--bg-green);
+}
+#MainPopup * {
+  max-height: 100%;
+  max-width: 100%;
+}
+#MainPopup .Row {
+  gap: 0.5rem;
+}
+
+#MainPopupHide {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  padding: 0.125rem;
+  border: 2px solid var(--bg-blue);
+  background-color: var(--dark-blue);
+  color: white;
+  text-shadow: 0px 0px 1px var(--yellow);
+  text-align: center;
+  box-shadow: 2px 2px var(--darkest-blue);
+}
+
+
+#MainContainer {
+  margin-top: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  box-shadow: 5px 5px var(--bg-blue);
+  background: var(--blue);
+  padding: 0.25rem;
+}
+@media all and (min-width: 0px) and (max-width: 768px) {
+  #MainContainer {
+    width: 80%;
+  }
+}
+@media all and (min-width: 0px) and (max-width: 480px) {
+  #MainContainer {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+#MainForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  background: var(--yellow);
+  border: 3px solid var(--dark-yellow);
+  padding: 1.5rem;
+}
+#MainForm .Row {
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+#MainForm .Column {
+  gap: 0.25rem;
+}
+
+#MainText {
+  text-align: center;
+  padding: 0.5rem;
+  text-shadow: 3px 3px var(--dark-blue);
+  color: white;
+  border-bottom: 2px solid var(--dark-blue);
+  background: var(--bg-blue);
+}
+
+.MainFormSubLabel {
+  font-size: 0.825rem;
+  color: #A1A1A1;
+}
+.MainFormInput {
+  padding: 0.25rem;
+  border-radius: 0;
+  border: 2px solid var(--bg-blue);
+  box-shadow: 2px 2px var(--darkest-blue);
+}
+.MainFormInput:focus {
+  background: var(--bg-green);
+  color: var(--text-green);
+  outline: none;
+}
+
+.Message {
+  font-size: 0.825rem;
+}
+.Error {
+  color: red;
+}
+
+
+#MainFormImageWrapper {
+  font-size: 1.1rem;
+  padding: 0.125rem;
+  border: 2px solid var(--bg-blue);
+  background-color: var(--dark-blue);
+  color: white;
+  text-shadow: 0px 0px 1px var(--yellow);
+  text-align: center;
+  box-shadow: 2px 2px var(--darkest-blue);
+}
+#MainFormImage {
+  position: absolute;
+  opacity: 0;
+}
+#MainFormImage:focus + #MainFormImageWrapper, #MainFormImageWrapper:hover {
+  outline: none;
+  border: 2px solid var(--darkest-yellow);
+  background-color: var(--yellow);
+  color: var(--darkest-blue);
+  text-shadow: 0px 0px 1px var(--darkest-yellow);
+  box-shadow: 2px 2px var(--blue);
+}
+
+#MainFormSubmit {
+  font-size: 1.1rem;
+  padding: 0.125rem;
+  border: 2px solid var(--bg-blue);
+  background-color: var(--dark-blue);
+  color: white;
+  text-shadow: 0px 0px 1px var(--yellow);
+  text-align: center;
+  box-shadow: 2px 2px var(--darkest-blue);
+}
+#MainFormSubmit:focus, #MainFormSubmit:hover {
+  outline: none;
+  border: 2px solid var(--darkest-yellow);
+  background-color: var(--yellow);
+  color: var(--darkest-blue);
+  text-shadow: 0px 0px 1px var(--darkest-yellow);
+  box-shadow: 2px 2px var(--blue);
+}

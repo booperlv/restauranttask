@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ethan Valondo">
+  <meta name="description" content="Official Website for Bead Bites, a jewelry
+      store with chains and beads of candy - to make \"that\" one delicious
+      looking necklace you know actually edible:)">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <title>BB Customs</title>
+</head>
+<body>
+    <header id="Header">
+      <span id="HeaderLogo">
+        Bead Bites Customs 
+      </span>
+
+      <ul id="HeaderLinks">
+        <li class="HeaderLink"><a href="index.html">Home</a></li>
+        <li class="HeaderLink"><a href="menu.html">Menu</a></li>
+        <li class="HeaderLink"><a class="CurrentPage" href="custom.html">Customs</a></li>
+        <li class="HeaderLink"><a href="about.html">About Us</a></li>
+      </ul>
+    </header>
+    
+    <main id="Main">
+      <!--This is going to be hidden until we process the form information,
+      wherein we will reflect the values here just to make an illusion of
+      processing the form-->
+      <div id="MainPopup" hidden>
+        <div class="Row">
+          <div>
+            <img id="MainPopupImage">
+          </div>
+          <p id="MainPopupText"></p>
+        </div>
+        <button id="MainPopupHide">Finished</button>
+      </div>
+
+      <div id="MainContainer">
+        <form id="MainForm" action="" method="get">
+          <h2 id="MainText">CUSTOM ORDER FORM</h2>
+
+          <div class="Column"> <!--Name-->
+            <p class="MainFormLabel">Name</p>
+            <div class="Row">
+              <div class="Column">
+                <input id="MainFormFirstName" class="MainFormInput" name="FirstName">
+                <span class="Message"></span>
+                <label for="MainFormFirstName" class="MainFormSubLabel">First Name</label>
+              </div>
+              <div class="Column">
+                <input id="MainFormLastName" class="MainFormInput" name="LastName">
+                <span class="Message"></span>
+                <label for="MainFormLastName" class="MainFormSubLabel">Last Name</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="Column"> <!--Email-->
+            <p class="MainFormLabel">Email</p>
+            <input id="MainFormEmail" class="MainFormInput" name="Email" />
+            <span class="Message"></span>
+          </div>
+
+          <div class="Column"> <!--Image-->
+            <div class="Row">
+              <div class="Column">
+                <p class="MainFormLabel">Image of Jewelry</p>
+                <input id="MainFormImage" class="MainFormInput" type="file" name="Image" accept="image/*" />
+                <label for="MainFormImage" id="MainFormImageWrapper">
+                  Select Image
+                </label>
+                <span class="Message"></span>
+              </div>
+              <div class="Column">
+                <p class="MainFormInformation">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel purus viverra, viverra sapien non, congue purus. Suspendisse elit lectus, consequat efficitur pulvinar ut, suscipit vel nulla. 
+                </p>
+              </div>
+            </div>
+          </div>
+            
+          <div class="Column"> <!--Message-->
+            <p class="MainFormLabel">Message (Optional)</p>
+            <input id="MainFormMessage" class="MainFormInput" name="Message" />
+            <span class="Message"></span>
+          </div>
+
+          <input type="submit" value="Submit" id="MainFormSubmit">
+        </form>
+
+      </div>
+    </main>
+
+    <script src="js/custom.js"></script>
+</body>
+</html>

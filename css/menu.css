@@ -1,0 +1,38 @@
+#Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#MainMenu {
+  margin-top: 1.75rem;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (min-width: 0px) and (max-width: 768px) {
+  #MainMenu {
+    width: 80%;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.MenuItem {
+  border: 0.125rem solid #ccc;
+  padding: 1rem;
+  background: var(--yellow);
+  box-shadow: 3px 3px var(--bg-green);
+}
+
+.MenuImage {
+  border: 0.25rem solid var(--bg-blue);
+}
+
+.MenuText {
+  justify-content: space-between;
+}
